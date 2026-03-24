@@ -1,0 +1,55 @@
+{
+  "name": "mangobrain-work",
+  "version": "0.1.0",
+  "description": "MangoBrain Work — Memory-powered workflow for marketing, content, strategy, and creative work. The work layer for Claude.",
+  "author": "Federico Anastasi",
+  "homepage": "https://github.com/Federico-Anastasi/mangobrain-work",
+  "skills": [
+    "skills/brief",
+    "skills/create",
+    "skills/brain-init-work",
+    "skills/memorize-work",
+    "skills/elaborate-work",
+    "skills/health-check-work",
+    "skills/smoke-test-work"
+  ],
+  "agents": [
+    "agents/researcher.md",
+    "agents/creator.md",
+    "agents/reviewer.md",
+    "agents/mem-manager.md"
+  ],
+  "rules": [
+    "rules/mangobrain-remember-work.md",
+    "rules/mangobrain-workflow-work.md"
+  ],
+  "templates": [
+    "templates/CLAUDE.md",
+    "templates/rules/product.md",
+    "templates/rules/brand.md",
+    "templates/rules/tone.md",
+    "templates/rules/audience.md",
+    "templates/rules/channels.md",
+    "templates/rules/strategy.md"
+  ],
+  "requires": {
+    "mcp": ["mangobrain"]
+  },
+  "recommended_connectors": [
+    {
+      "name": "canva",
+      "purpose": "Visual deliverables — social posts, carousels, presentations, brand graphics",
+      "used_by": ["creator"]
+    },
+    {
+      "name": "google-drive",
+      "purpose": "Read/write shared brand documents, editorial plans, meeting notes",
+      "used_by": ["researcher", "creator"]
+    },
+    {
+      "name": "remotion",
+      "purpose": "Video and motion graphics — Reels, intros, animated content",
+      "used_by": ["creator"]
+    }
+  ]
+}
